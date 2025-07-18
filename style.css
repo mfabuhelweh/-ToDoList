@@ -1,0 +1,122 @@
+*{box-sizing: border-box;}
+body{
+    background-color: rgb(205, 204, 204);
+font-family: Arial, Helvetica, sans-serif;
+}
+.todo-container{background-color:#f6f6f6;
+width: 600px;
+margin: 30px auto 0;
+
+}
+.todo-container .add-task{
+    padding: 15px;
+    background-color: #67908d;
+position: relative;
+
+}
+.todo-container .add-task input{
+  border: none;
+display: inline-block;
+padding: 10px 15px;
+background-color:#b5dcda85;
+width: calc(100% - 15px);
+color: #fff;
+font-size: 20px;
+}
+
+.todo-container .add-task input:focus{
+    outline: none;
+} 
+.todo-container .add-task  .plus{
+    position: absolute;
+    background-color: #d6d6d6;
+height: 44px;
+width: 44px;
+right: 12px;
+border-radius: 50%;
+line-height: 44px;
+text-align: center;
+color:#67908d ;
+cursor: pointer;
+font-size: 38px;
+transition:transform .5s ;
+}
+.todo-container .add-task  .plus:hover{
+transform: rotate(360deg);
+
+}
+
+.todo-container .task-content{
+background-color: rgba(210, 198, 198, 0.461);
+padding:10px;
+
+}
+.todo-container .task-content .No-tasks-massage{
+color: #777;
+font-size: 20px;
+/* display: none; */
+
+}
+.todo-container .task-content >span{
+display: block;
+padding: 10px;
+font-size: 20px;
+margin: 10px;
+background-color: #c8c7c79c;
+
+}
+
+.todo-container .task-content >span:not(:last-child){
+margin-bottom: 20px;
+
+}
+.todo-container .task-content .task-box  .delet{
+float: right;
+background-color: #9e0606;
+padding: 4px 10px;
+font-size: 10px;
+font-weight: bold;
+border-radius: 4px;
+color: #fff;
+cursor: pointer;
+
+}
+.task-stats {
+    overflow: hidden;
+    margin: 10px auto;
+    width: 600px;
+font-size: 12px;
+}
+
+.task-stats .task-count {
+ width: 50%;
+float: left;
+
+}
+
+.task-stats .task-completed {
+ width: 50%;
+float: right;
+padding:10px;
+text-align: right;
+
+}
+.task-stats .task-completed span,.task-stats .task-count  span
+{
+font-size: 15px;
+color: #fff;
+padding: 1px 5px ;
+border-radius: 4px;
+font-weight: bold;
+}
+.task-stats .task-completed span{
+    background-color: #67908d;
+}
+.task-stats .task-count span{
+    background-color: #9e0606;}
+
+
+ .task-clicked {
+text-decoration:line-through #9e0606;
+
+}
