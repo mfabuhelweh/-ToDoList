@@ -12,20 +12,19 @@
 <body>
     <div class="todo-container">
         <div class="add-task">
-            <input type="text" id="task">
+            <label for="task">
+                <input type="text" id="task" name="task">
+            </label>
             <span class="plus" id="plus">+</span>
         </div>
         <div class="task-content">
             <span class="No-tasks-massage">No Tasks To Show</span>
-          
-            
-<p>test test</p>
-
         </div>
     </div>
     <div class="task-stats">
-        <div class="task-count" >Task <span id="task-count">0</span></div>
-        <div class="task-completed" >Completed <span id="task-completed">0</span></div>
+        <div class="task-count">Task <span id="task-count">0</span></div>
+        <div class="task-completed">Completed <span id="task-completed">0</span></div>
+
     </div>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
